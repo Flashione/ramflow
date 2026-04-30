@@ -1,0 +1,11 @@
+# GitHub Linguist configuration
+# ramflow is C-first. Go and Rust are kept as secondary implementation variants,
+# but the repository identity should not be dominated by implementation variants.
+
+*.md linguist-documentation
+docs/** linguist-documentation
+examples/** linguist-documentation
+
+# Keep the language card aligned with the project identity.
+go/** linguist-detectable=false
+rust/** linguist-detectable=false
